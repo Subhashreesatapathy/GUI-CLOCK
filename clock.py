@@ -11,19 +11,19 @@ photo = ImageTk.PhotoImage(ico)
 root.wm_iconphoto(False, photo)
 def time():
 	string = strftime('%H:%M:%S %p')
-	lbl.config(text=string)
-	lbl.after(1000, time)
+	lable.config(text=string)
+	lable.after(1000, time)
 
 
 # Styling the label widget
 
-lbl = Label(root, font=('cursive', 40, 'italic'),
+lable = Label(root, font=('cursive', 40, 'italic'),
 			background='purple',
 			foreground='white')
 
 # Placing clock at the centre
 # of the tkinter window
-lbl.pack(anchor='center')
+lable.pack(anchor='center')
 time()
 
 mainloop()
